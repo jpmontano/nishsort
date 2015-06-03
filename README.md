@@ -36,6 +36,8 @@ biijbiihmaagod
 Using command line option ```-ag```:
 
 ```
+cat myinfile.txt | bash nishsort.sh -ag
+
 ....****Unrecognizable character in: qwadaakrwad
 ....****Unrecognizable character in: xngwiigan
 |a..|h..|ii.|m..
