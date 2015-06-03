@@ -1,6 +1,6 @@
-# nishsort
+# Nishsort
 
-**nishsort is a bash script (Debian-tested) which reads a file of Nishnaabe words (Pic River dialect), and returns a list of those words sorted by grapheme.**
+**Nishsort is a bash script (Debian-tested) which reads a file of Nishnaabe words (Pic River dialect), and returns a list of those words sorted by grapheme.**
 
 **Command line option ```-ag``` will output the sorted list aligned by grapheme.**
 
