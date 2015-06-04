@@ -11,7 +11,7 @@
 Without use of command line option ```-ag```:
 
 ```
-cat myinfile.txt | bash nishsort.sh
+$ cat myinfile.txt | bash nishsort.sh
 
 ****Unrecognizable character in: qwadaakrwad
 ****Unrecognizable character in: xngwiigan
@@ -36,7 +36,7 @@ biijbiihmaagod
 Using command line option ```-ag```:
 
 ```
-cat myinfile.txt | bash nishsort.sh -ag
+$ cat myinfile.txt | bash nishsort.sh -ag
 
 ....****Unrecognizable character in: qwadaakrwad
 ....****Unrecognizable character in: xngwiigan
