@@ -21,6 +21,7 @@ aabaabkahgaadeg
 aabtooyhiing
 aadaakhwaad
 aaniin
+aanzyaan
 aapdahoonaad
 aazhoobhidwaad
 baakhaakwenh
@@ -46,6 +47,7 @@ $ cat myinfile.txt | bash nishsort.sh -ag
 |aa.|b..|t..|oo.|y..|h..|ii.|ng.
 |aa.|d..|aa.|k..|h..|w..|aa.|d..
 |aa.|n..|ii.|n..
+|aa.|nz.|y..|aa.|n..
 |aa.|p..|d..|a..|h..|oo.|n..|aa.|d..
 |aa.|zh.|oo.|b..|h..|i..|d..|w..|aa.|d..
 |b..|aa.|k..|h..|aa.|k..|w..|e..|nh.
