@@ -16,7 +16,7 @@ while [[ $# > 0 ]]; do cmdLineOpt="$1"; shift; done
 
 # These are all of the Nishnaabe graphemes - in sorted order.
 # -, ', a, aa, b, ch, d, e, g, h, i, ii, j,
-# k, m, n, nd, ng, nh, nj, ns, ny, nz, nzh,
+# k, m, mb, n, nd, ng, nh, nj, ns, ny, nz, nzh,
 # o, p, s, sh, shk, t, w, y, z, zh
 
 
@@ -85,8 +85,8 @@ singleCharGraphemes=("-" "'" "a" "b" "d" "e" "g" "h" "i" "j" "k"
 
 # Array of possible two-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
-digraphs=("aa" "ch" "ii" "nd" "ng" "nh" "nj" "ns" "ny" "nz" "oo"
-          "sh" "sk" "zh")
+digraphs=("aa" "ch" "ii" "mb" "nd" "ng" "nh" "nj" "ns" "ny" "nz"
+          "oo" "sh" "sk" "zh")
 
 # Array of possible three-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
