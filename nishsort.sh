@@ -14,10 +14,18 @@ while [[ $# > 0 ]]; do cmdLineOpt="$1"; shift; done
 ########################
 (
 
-# These are all of the Nishnaabe graphemes - in sorted order.
-# -, ', a, aa, b, ch, d, e, g, h, i, ii, j,
-# k, m, mb, n, nd, ng, nh, nj, ns, ny, nz, nzh,
-# o, p, s, sh, shk, t, w, y, z, zh
+# Disregarding carons (ǧ, ȟ and ǩ), these are all of the Nishnaabe
+# graphemes in sorted order:
+# - ' a aa b ch d e g h i ii j k
+# m mb n nd ng nh nj ns ny nz nzh
+# o p s sh shk t w y z zh
+#
+#
+# Including carons (ǧ, ȟ and ǩ), these are all of the Nishnaabe
+# graphemes in sorted order:
+# - ' a aa b ch cȟ d e g ǧ h ȟ i ii j k ǩ
+# m mb n nd ng nǧ nh nȟ nj ns ny nz nzh nzȟ
+# o p s sh sȟ shk shǩ t w y z zh zȟ
 
 
 # Read each line of the piped-in file into string variable singleLine.
@@ -80,17 +88,17 @@ function isItInTheArray()
 
 # Array of possible single-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
-singleCharGraphemes=("-" "'" "a" "b" "d" "e" "g" "h" "i" "j" "k"
-                     "l" "m" "n" "o" "p" "s" "t" "w" "y" "z")
+singleCharGraphemes=("-" "'" "a" "b" "d" "e" "g" "ǧ" "h" "ȟ" "i" "j"
+                     "k" "ǩ" "l" "m" "n" "o" "p" "s" "t" "w" "y" "z")
 
 # Array of possible two-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
-digraphs=("aa" "ch" "ii" "mb" "nd" "ng" "nh" "nj" "ns" "ny" "nz"
-          "oo" "sh" "sk" "zh")
+digraphs=("aa" "ch" "cȟ" "ii" "mb" "nd" "ng" "nǧ" "nh" "nȟ" "nj"
+          "ns" "ny" "nz" "oo" "sh" "sȟ" "sk" "sǩ" "zh" "zȟ")
 
 # Array of possible three-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
-trigraphs=("nzh" "shk")
+trigraphs=("nzh" "nzȟ" "shk" "sȟk" "shǩ" "sȟǩ")
 
 # Begin iterating through each Nishnaabe word in the nishWords array.
 for nishWord in ${nishWords[@]}; do
