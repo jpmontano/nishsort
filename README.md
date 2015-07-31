@@ -80,6 +80,7 @@ $ cat myinfile.txt | bash nishsort.sh -ag
 |g..|b..|aa.|b..|w..|e..|h..|g..|a..|n..
 |g..|e..|t..|e..|-..|y..|a..|h..|aa.
 |g..|e..|t..|e..|h..|aa.|w..|a..|ng.
+|g..|g..|ii.|-..|n..|'..|z..|i..|k..|w..|e..|ȟ..|d..|i..|z..
 |g..|g..|w..|e..|j..|k..|a..|zh.|b..|a..|h..|d..|i..|w..|aa.|d..
 |g..|i..|j..|y..|a..|h..|ii.
 |g..|ii.|g..|oo.|ny.|h..|aa.|d..
@@ -110,6 +111,7 @@ $ cat myinfile.txt | bash nishsort.sh -ag
 |m..|sk.|o..|b..|ii.|h..|w..|aa.|d..
 |m..|w..|i..|h..|aa.|d..
 |m..|z..|i..|w..|e..|b..|ii.|h..|g..|aa.|d..|e..|g..
+|n..|'..|d..|a..|ǧ..|sh.|i..|n..
 |n..|'..|g..|a..|j..|h..|i..|w..|e..|d..
 |n..|'..|s..|o..|-..|d..|b..|a..|h..|oo.|b..|aa.|n..
 |n..|aa.|d..|h..|i..|b..|ii.|d..|aa.|b..|ii.|d..
@@ -119,6 +121,7 @@ $ cat myinfile.txt | bash nishsort.sh -ag
 |n..|i..|shk|w..|e..|h..|aa.|d..
 |n..|ii.|w..|oo.|b..|h..|i..|d..|w..|aa.|d..
 |n..|ii.|y..|o..|-..|n..|a..|m..|h..|e..|-..|g..|ii.|zh.|g..|a..|k..
+|n..|m..|a..|z..|n..|i..|h..|g..|e..
 |n..|n..|aa.|h..|ch.|i..|g..|e..|d..
 |n..|ng.|w..|w..|aa.|g..|n..|e..|h..|a..|ng.
 |n..|oo.|j..|h..|i..|k..|w..|e..|w..|e..|-..|n..|'..|g..|a..|m..|o..|n..
