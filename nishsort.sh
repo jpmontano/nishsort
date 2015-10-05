@@ -18,14 +18,14 @@ while [[ $# > 0 ]]; do cmdLineOpt="$1"; shift; done
 # graphemes in sorted order:
 # - ' a aa b ch d e g h i ii j k
 # m mb n nd ng nh nj ns ny nz nzh
-# o p s sh shk t w y z zh
+# o oo p s sh shk t w y z zh
 #
 #
 # Including carons (ǧ, ȟ and ǩ), these are all of the Nishnaabe
 # graphemes in sorted order:
 # - ' a aa b ch cȟ d e g ǧ h ȟ i ii j k ǩ
 # m mb n nd ng nǧ nh nȟ nj ns ny nz nzh nzȟ
-# o p s sh sȟ shk shǩ t w y z zh zȟ
+# o oo p s sh sȟ shk shǩ t w y z zh zȟ
 
 
 # Read each line of the piped-in file into string variable singleLine.
