@@ -16,16 +16,16 @@ while [[ $# > 0 ]]; do cmdLineOpt="$1"; shift; done
 
 # Disregarding carons (ǧ, ȟ and ǩ), these are all of the Nishnaabe
 # graphemes:
-# - ' a aa b ch d e g h i ii j k
-# m mb n nd ng nh nj ns ny nz nzh
-# o oo p s sh shk sht sk t w y z zh
+# - ' a aa b ch d e g h i ii j k m mb
+# n nd ng nh nj ns ny nz nzh o oo p
+# s sh shk shp sht sk sp t w y z zh
 #
 #
 # Including carons (ǧ, ȟ and ǩ), these are all of the Nishnaabe
 # graphemes:
-# - ' a aa b ch cȟ d e g ǧ h ȟ i ii j k ǩ
-# m mb n nd ng nǧ nh nȟ nj ns ny nz nzh nzȟ
-# o oo p s sh sȟ shk shǩ sht sk sǩ t w y z zh zȟ
+# - ' a aa b ch cȟ d e g ǧ h ȟ i ii j k ǩ m mb
+# n nd ng nǧ nh nȟ nj ns ny nz nzh nzȟ o oo p
+# s sh sȟ shk shǩ shp sht sk sp sǩ t w y z zh zȟ
 
 
 # Read each line of the piped-in file into string variable singleLine.
@@ -94,11 +94,11 @@ singleCharGraphemes=("-" "'" "a" "b" "d" "e" "g" "ǧ" "h" "ȟ" "i" "j"
 # Array of possible two-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
 digraphs=("aa" "ch" "cȟ" "ii" "mb" "nd" "ng" "nǧ" "nh" "nȟ" "nj"
-          "ns" "ny" "nz" "oo" "sh" "sȟ" "sk" "sǩ" "zh" "zȟ")
+          "ns" "ny" "nz" "oo" "sh" "sȟ" "sk" "sǩ" "sp" "zh" "zȟ")
 
 # Array of possible three-letter-graphemes in Pic River's dialect
 # of the Nishnaabe language.
-trigraphs=("nzh" "nzȟ" "shk" "shǩ" "sht")
+trigraphs=("nzh" "nzȟ" "shk" "shǩ" "shp" "sht")
 
 # Begin iterating through each Nishnaabe word in the nishWords array.
 for nishWord in ${nishWords[@]}; do
